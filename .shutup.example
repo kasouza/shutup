@@ -1,0 +1,14 @@
+# This config file should be encrypted with gpg and the result `.shutup.gpg` file
+# put in your home folder (~/.shutup.gpg)
+
+# --- Global Configs ---
+PEM_PATH=/home/user/path/to/pem/files
+
+# --- Server configs ---
+
+# This first column is what is used when calling the script,
+# for example `shutup server_name` would  connect to the first this server
+server_name         user@192.168.1.1     /pem_file/with/absolut_path.pem
+
+# .pem file path can also be relative to the PEM_PATH
+other_server        user@192.168.1.1     pem_file_relative_to_config_path.pem
